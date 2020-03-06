@@ -1,0 +1,151 @@
+.background21 {
+	background-color: #de8989;
+	font-family: Roboto;
+	overflow: hidden;
+	height: 98vh;
+	width: 98vw;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.page {
+	display: grid;
+	grid-template-rows: 2fr 1fr 4fr;
+	grid-template-columns: 1.5fr 3fr 3fr;
+	gap: 2rem 0;
+}
+.page__headings {
+	display: flex;
+	justify-content: space-between;
+	grid-row: 1 / span 1;
+	grid-column: 2 / span 2;
+	margin-right: -6rem;
+}
+
+.headings__heading {
+	font-size: 6rem;
+	color: white;
+	opacity: 0.5;
+}
+
+.heading--selected {
+	opacity: 1;
+}
+
+.page__warning {
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+	font-size: 1.7rem;
+	color: white;
+	max-width: 80rem;
+	font-weight: 500;
+}
+
+.page__prevbtn {
+	height: 10rem;
+	width: 10rem;
+	color: white;
+	opacity: 0.5;
+	border: none;
+	grid-row: 3 / span 1;
+	grid-column: 1 / span 1;
+	justify-self: end;
+}
+
+.page__nextbtn {
+	height: 10rem;
+	width: 10rem;
+	color: white;
+	opacity: 0.5;
+	border: none;
+	grid-row: 3 / span 1;
+	grid-column: 3 / span 1;
+	justify-self: start;
+}
+
+.page__washing {
+	grid-row: 3 / span 1;
+	grid-column: 2 / span 1;
+	display: grid;
+	/* grid-template-rows: [box-start]5fr [box-end btn-start] 1fr [btn-end]; */
+	grid-template-rows: 1fr;
+
+	grid-template-columns: repeat(3, fit-content(33%));
+}
+.washing__timer {
+	background-color: #3e3c3d;
+	height: 30rem;
+	width: 30rem;
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+}
+/* .timer__heading {
+	color: #de8989;
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.timer__time {
+	color: white;
+	font-size: 3rem;
+	font-weight: 700;
+} */
+
+.washing__temp {
+	height: 30rem;
+	width: 30rem;
+	background-color: #353334;
+	grid-row: 1 / span 1;
+	grid-column: 2 / span 1;
+}
+
+.washing__heading {
+	color: #de8989;
+	font-size: 2rem;
+	font-weight: 300;
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+	margin-bottom: 1rem;
+}
+.washing__customizable {
+	color: white;
+	font-size: 3rem;
+	font-weight: 700;
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+	padding-top: 1.2rem;
+}
+
+.washing__amount {
+	height: 30rem;
+	width: 30rem;
+	background-color: #201e1f;
+	grid-row: 1 / span 1;
+	grid-column: 3 / span 1;
+}
+
+.washing__startbtn {
+	width: 25rem;
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+	align-self: end;
+	padding: 2rem;
+	font-size: 1.5rem;
+	background-color: black;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-weight: 700;
+	justify-self: center;
+	/* align-self: start; */
+	margin-bottom: 3rem;
+	/* display: inline; */
+}
+.washing__display {
+	display: grid;
+	grid-template-rows: 1.3fr 2fr;
+	grid-template-columns: 1fr 5fr;
+	align-items: start;
+}

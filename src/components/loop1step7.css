@@ -1,0 +1,125 @@
+.background7 {
+	font-size: 62.5%;
+	background-color: #f2cd96;
+	font-family: Roboto;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 96vh;
+	width: 96vw;
+}
+
+.container7 {
+	background-color: white;
+	height: 80vh;
+	width: 70vw;
+	margin: 10rem auto;
+
+	display: grid;
+	grid-template-rows: 5fr 1fr;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0px 13px 25px -4px rgba(208, 208, 208, 1);
+	box-shadow: 0px 6px 17px -4px rgba(88, 88, 88, 1);
+	box-shadow: 0px 6px 36px -15px rgba(88, 88, 88, 1);
+	overflow: hidden;
+}
+
+.container7__header {
+	grid-row: 1 / span 2;
+	grid-column: 1 / span 1;
+	background-color: #474955;
+	color: white;
+
+	display: grid;
+	grid-template-rows: 4fr 1fr;
+	grid-template-columns: 1fr 10fr 1fr;
+	height: 100%;
+}
+
+.header__heading {
+	font-size: 3rem;
+	grid-row: 1 / span 1;
+	grid-column: 2 / span 1;
+	margin-top: 5rem;
+	max-height: 20rem;
+}
+.heading__subheading {
+	font-weight: 300;
+}
+.heading7__line {
+	background-color: #f88379;
+	height: 4px;
+	width: 4rem;
+	border: none;
+	margin: 1rem 0;
+}
+
+.header__author {
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.author__img {
+	border-radius: 100px;
+	height: 5rem;
+	margin-right: 1rem;
+}
+
+.author__name {
+	/* color: white; */
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+.container__paragraph {
+	font-size: 2.3rem;
+	font-weight: 400;
+	text-align: start;
+	margin: 7rem;
+	color: #282828;
+}
+.paragraph__first-letter {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.container__comment-section {
+	box-shadow: 0px -14px 20px -10px #f0f0f0;
+
+	z-index: 1;
+
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.comment-section__date {
+	font-size: 2rem;
+	color: #282828;
+	flex-grow: 1;
+	margin-left: 2rem;
+}
+.comments__icon {
+	margin: 0 1rem 0 2rem;
+	height: 3rem;
+}
+
+.comments__amount {
+	/* margin: 2rem; */
+	font-size: 1.3rem;
+	color: #c8c8c8;
+}
+.comment-section__hamburger {
+	margin: 3rem;
+	width: 4rem;
+}
+
+.date__time {
+	font-weight: 700;
+}

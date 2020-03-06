@@ -1,0 +1,151 @@
+.background5 {
+	background: url("/img/background5.jpg");
+	background-size: cover;
+	overflow: hidden;
+	font-family: Roboto;
+	font-weight: 500;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container5 {
+	height: 65vh;
+	width: 30vw;
+	background-color: white;
+	margin: 10rem auto;
+	display: grid;
+	grid-template-columns: 1fr 10fr 1fr;
+	border-radius: 5px;
+}
+
+.destination__to {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	/* font-size: 4rem; */
+}
+.destination__from {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+}
+.container__destination {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	grid-column: 2 / span 1;
+}
+
+.container5__info {
+	grid-column: 2 / span 1;
+
+	display: grid;
+
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: start;
+}
+
+.info__qr {
+	grid-column: 2 / span 2;
+	grid-row: 2/ -1;
+	justify-self: end;
+	width: 230px;
+	/* height: 270px; */
+}
+.destination__line {
+	height: 7px;
+	width: 40px;
+	background-color: #d8e7f2;
+	border: none;
+}
+
+.destination__abbrev {
+	color: #4e7aff;
+
+	font-size: 5rem;
+	font-weight: 900;
+	font-family: Prompt;
+	margin: 0;
+	padding: 0;
+	max-height: 75px;
+}
+/* .from__abbrev {
+  
+}
+
+.to__abbrev {
+} */
+
+.info--title {
+	color: #a9a9a9;
+	margin: 0;
+	padding: 0;
+	font-size: 1.3rem;
+}
+
+.info--details {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+.from__full {
+	color: #a9a9a9;
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.to__full {
+	color: #a9a9a9;
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+/* .flight__title {
+	color: #a9a9a9;
+} */
+
+/* .flight__number {
+	font-size: 1.3rem;
+} */
+
+/* .gate__title {
+	color: #a9a9a9;
+} */
+
+/* .gate__number {
+	font-size: 1.3rem;
+} */
+/* .seat__title {
+	color: #a9a9a9;
+} */
+
+/* .seat__number {
+	font-size: 1.3rem;
+} */
+/* .passenger__title {
+	color: #a9a9a9;
+} */
+
+/* .passenger__name {
+	font-size: 1.3rem;
+} */
+/* .class__title {
+	color: #a9a9a9;
+} */
+/* .class__name {
+	font-size: 1.3rem;
+} */
+/* .departure__title {
+	color: #a9a9a9;
+} */
+
+/* .departure__time {
+	font-size: 1.3rem;
+} */

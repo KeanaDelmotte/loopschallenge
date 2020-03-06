@@ -1,0 +1,117 @@
+.background6 {
+	background-color: #4d515c;
+	font-family: Roboto;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container6 {
+	width: 70vw;
+	height: 85vh;
+	background-color: white;
+	border-radius: 5px;
+	margin: 4rem auto;
+
+	display: grid;
+	grid-template-rows: [heading-start] 1fr [heading-end description-start] 1fr [description-end signup-start] 3fr [signup-end email-start] 1fr [email-end];
+	grid-template-columns: [margin-start] 1fr [margin-end signup-start] 7fr [signup-end background-start] 5fr [background-end];
+}
+
+.container__background {
+	grid-column: background-start / background-end;
+	grid-row: heading-start/ email-end;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.container6__heading {
+	font-weight: 300;
+	grid-row: heading-start / heading-end;
+	grid-column: signup-start / signup-end;
+	font-size: 4rem;
+	margin-top: 5rem;
+}
+
+.container__description {
+	grid-row: description-start / description-end;
+	grid-column: signup-start / signup-end;
+	font-size: 1.5rem;
+	color: #b0b0b0;
+	font-weight: 500;
+}
+
+.container__signup {
+	grid-column: signup-start / signup-end;
+}
+
+.container__email-signup {
+	/* grid-row: 2 / span 1; */
+	grid-column: signup-start / signup-end;
+	grid-row: email-start / email-end;
+	display: flex;
+	align-items: center;
+}
+
+.container__line {
+	height: 1.1px;
+	background-color: #f5f5f5;
+
+	color: lightgray;
+	width: 100%;
+	border: none;
+
+	/* grid-column: 1 / span 2; */
+	/* grid-row: 4 / span 1; */
+	grid-row: email-start / email-end;
+	grid-column: margin-start / signup-end;
+}
+.email__btn {
+	background-color: transparent;
+	border: none;
+	height: 3rem;
+	color: gray;
+	font-weight: 700;
+	font-size: 15px;
+	font-family: Roboto;
+	margin-right: 5rem;
+	font-size: 1.2rem;
+}
+
+.email__text {
+	flex-grow: 1;
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+.signup {
+	background-color: transparent;
+	border: 2px solid #f5f5f5;
+	border-radius: 5px;
+	grid-column: 2 / span 1;
+	width: 90%;
+	height: 7rem;
+
+	margin-bottom: 2rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.signup__icon {
+	width: 2rem;
+	height: 2rem;
+	margin-left: 1rem;
+}
+
+.signup__text {
+	font-weight: 700;
+	color: gray;
+	flex-grow: 1;
+	letter-spacing: -0.01rem;
+	font-family: Roboto;
+	text-align: center;
+	font-size: 12px;
+}
